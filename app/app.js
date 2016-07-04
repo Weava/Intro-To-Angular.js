@@ -5,6 +5,7 @@
     angular.module('introApp', [
         'ngRoute',
         'ngResource',
-        'introApp.recordList'
+        'introApp.recordList',
+        'introApp.recordView'
     ]);
 })();

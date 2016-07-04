@@ -1,9 +1,26 @@
 [
   {
+    "id": 1,
     "title": "Whenever You Need Somebody",
     "artist": "Rick Astley",
     "year": "1986",
     "albumCover": "assets/img/rickAstleyWheneverYouNeedSomeone.jpg",
     "albumPrice": 10.99
+  },
+  {
+    "id": 2,
+    "title": "Run the Jewels 2",
+    "artist": "Run the Jewels",
+    "year": "2014",
+    "albumCover": "assets/img/runTheJewels2.jpg",
+    "albumPrice": 0.00
+  },
+  {
+    "id": 3,
+    "title": "Highway 61 Revisited",
+    "artist": "Bob Dylan",
+    "year": "1965",
+    "albumCover": "assets/img/bobDylanHighway61Revisited.jpg",
+    "albumPrice": 6.99
   }
 ]

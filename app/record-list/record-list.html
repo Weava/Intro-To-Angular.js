@@ -1,6 +1,13 @@
 <div>
     <p>This is a list of records</p>
     <div ng-repeat="record in vm.records">
-        <p>{{record.title}}  -  {{record.artist}}</p>
+        <div>
+            <a href="#!/record/{{record.id}}" class="thumbnail">
+                <img src="{{record.albumCover}}">
+            </a>
+            <a href="#!/record/{{record.id}}">
+                <p>{{record.title}}  -  {{record.artist}}</p>
+            </a>
+        </div>
     </div>
 </div>
