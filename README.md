@@ -25,7 +25,40 @@ These concepts may seem confusing at first, but as we get into the actual elemen
 ##### Linux / macOS
 // Insert setup details here
 ##### Windows (With Visual Studio)
-// Figure out how to do this
+
+There are two ways to install Angular with Visual Studio.
+###### Method 1 - Package Manager Console (Not Recommended):
+Install Angular.js through the Package Manager Console with the following command:
+
+`Install-Package angularjs`
+
+It is not recommended to install Angular this way, as it defeats the modular nature of Angular.js itself.
+Installing through the PMC adds all Angular modules at once, not just the ones you need.
+
+###### Method 2 - Using NPM in Visual Studio (Recommended):
+Before we start, make sure to download [Powershell](https://www.microsoft.com/en-us/download/details.aspx?id=40855) It does some pretty awesome stuff, but will really help us when installing Node.
+
+Node.js is simply a framework for allowing JavaScript to be 'compiled' and ran on a server-side environment. NPM is the package manager for Node that allows the installation of JavaScript libraries and packages.
+
+To install Node, and NPM, visit the [Node.js Website](https://nodejs.org/en/). Make sure to install the latest version, and not LTS. Follow the prompts to install, then restart your computer. Check if Node was installed by entering `node -v` into the command line. Do the same for npm by running `npm -v`
+
+Now to install Bower. Where Node and NPM are meant for server-side environments, Bower is the most used package manager for client-side JavaScript libraries, including Angular. To install Bower, enter the following command into powershell: `npm install -g bower`. Check to see if it installed correctly by running `bower -v`
+
+Optional: Gulp is a build system for Node.js. It allows you to automate your workflow when working with Node and its various packages. It can also help with testing, browser linking, and quite a lot more. To install Gulp, run `npm install --global gulp`. Then, for each project you wish to install Gulp with, run this command in the projects directory: `npm install --save-dev gulp` This sets Gulp as a devDependency on the project.
+
+Now we are ready to add Angular to our project. To do this, we will need to add a few files to our project. I have added generic file contents for these files in [This Gist](https://gist.github.com/Weava/8a63098446129e0b5e166a55e66646ab). These files perform the following functions:
+ * `package.json` - Sets up dependencies for Node, to be installed using the `npm install` command.
+ * `bower.json` - Similarly to `package.json`, sets up dependencies for bower to be installed using the `bower install` command.
+ * `karma.conf.js` - Sets up the test running framework Karma.
+ * `protractor.conf.js` - Sets up End to End testing framework Protractor.
+ 
+How Karma and Protractor work are out of scope for this project, but I recommend checking them out.
+
+Once you have these files setup, run `npm install` within the same directory, and the folders `node_modules` and `bower_components` should be generated with all dependencies you have declared within the `package.json` and `bower.json` files respectively.
+
+Start your server by entering `npm start` and going over to localhost:8000. Your index page should appear.
+
+Alternatively, running the server from Visual Studio should also work.
 
 Now that we are setup with Angular, let's talk about its main elements.
 
