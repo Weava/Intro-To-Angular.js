@@ -34,7 +34,9 @@ Now that we are setup with Angular, let's talk about its main elements.
 ##### Directives
 From the documentation:
 ````
-At a high level, directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's HTML compiler ($compile) to attach a specified behavior to that DOM element (e.g. via event listeners), or even to transform the DOM element and its children.
+At a high level, directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that
+tell AngularJS's HTML compiler ($compile) to attach a specified behavior to that DOM element (e.g. via event listeners), or
+even to transform the DOM element and its children.
 ````
 Directives are simply a way of modifying the HTML in a page. Whether it be creating an entire element, a modifying attribute to add to elements, or a number of other types of items. These directives may contain controllers, templates, and other pieces. We will talk about many of these pieces further down.
 
@@ -61,7 +63,9 @@ Use controllers to:
 
 Do not use controllers to:
 
-* Manipulate DOM — Controllers should contain only business logic. Putting any presentation logic into Controllers significantly affects its testability. Angular has databinding for most cases and directives to encapsulate manual DOM manipulation.
+* Manipulate DOM — Controllers should contain only business logic. 
+Putting any presentation logic into Controllers significantly affects its testability. 
+Angular has databinding for most cases and directives to encapsulate manual DOM manipulation.
 * Format input — Use angular form controls instead.
 * Filter output — Use angular filters instead.
 * Share code or state across controllers — Use angular services instead.
