@@ -86,6 +86,8 @@ A quick recap on how to install Angular for Windows and Visual Studio:
  * Optionally add `karma.conf.js` and `protractor.conf.js` files to project from the Gist mentioned above.
  * Run `npm install` to install all components.
  * Start your server.
+ 
+I understand that this process is much longer than just installing the NuGet package, but keeping any sort of .Net dependency out of your Angular project is important for testing and maintaining your code.
 
 Now that we are setup with Angular, let's talk about its main elements.
 
