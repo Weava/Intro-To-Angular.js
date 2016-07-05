@@ -87,3 +87,15 @@ NOTE: Services are singletons in Angular, meaning they are simply a single insta
 
 ##### Others
 There are many other elements to angular that, for the sake of simplicity, I will not get into. I tried to get what I felt were the most fundamental elements of Angular within this project to minimize confusion. These other elements deserve just as much attention, and I highly recommend heading over to the [Angular docs](https://docs.angularjs.org/guide) for more information on these other elements. 
+
+## Further Reading
+
+[John Papa's Angular 1.x Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) - A great guide for writing readable and testable Angular code, as well as establishing a good looking style guide.
+
+[John Papa's ngDemos](https://github.com/johnpapa/ng-demos/tree/master/quickstart) - Github repository for demonstrating John Papa's style guide with a small and simple angular application.
+
+[The Angular Docs](https://docs.angularjs.org/guide) - The main documentation for Angular, made by Google.
+
+[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - You Don't Know JS is a fantastic book series based on learning the fundamentals, and eventually more advanced topics, of JavaScript. While not strictly about Angular, these books will help build a better understanding of the language that Angular is built upon.
+
+[RxJS Github Repo](https://github.com/Reactive-Extensions/RxJS) - Reactive Extensions are a great library that is built into Angular. While no examples exist within this project, I recommend reading up on RxJS, as it can make data composition and flow much simpler.
