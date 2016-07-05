@@ -89,6 +89,7 @@ NOTE: Services are singletons in Angular, meaning they are simply a single insta
 There are many other elements to angular that, for the sake of simplicity, I will not get into. I tried to get what I felt were the most fundamental elements of Angular within this project to minimize confusion. These other elements deserve just as much attention, and I highly recommend heading over to the [Angular docs](https://docs.angularjs.org/guide) for more information on these other elements. 
 
 ## Further Reading
+Below should be some good resources for learning the basics of Angular, as well as other important concepts for JavaScript
 
 [John Papa's Angular 1.x Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) - A great guide for writing readable and testable Angular code, as well as establishing a good looking style guide.
 
@@ -99,3 +100,9 @@ There are many other elements to angular that, for the sake of simplicity, I wil
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - You Don't Know JS is a fantastic book series based on learning the fundamentals, and eventually more advanced topics, of JavaScript. While not strictly about Angular, these books will help build a better understanding of the language that Angular is built upon.
 
 [RxJS Github Repo](https://github.com/Reactive-Extensions/RxJS) - Reactive Extensions are a great library that is built into Angular. While no examples exist within this project, I recommend reading up on RxJS, as it can make data composition and flow much simpler.
+
+[RxJS Blog Post From Google](https://medium.com/google-developer-experts/angular-introduction-to-reactive-extensions-rxjs-a86a7430a61f#.xlnecvuou) - A great blog post from Google, explaining what RxJS is, and how to use it with Angular. If going through the RxJS repo didn't make a lot of sense, this might help.
+
+[Dan Lew's Grokking RxJava](http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/) - While not based in JavaScript, this blog post explains how Rx works better than any other I've seen. If Rx still doesn't make sense, go through this.
+
+[Getting Started with Angular.js and .Net MVC](http://www.codeproject.com/Articles/806029/Getting-started-with-AngularJS-and-ASP-NET-MVC-Par) - A good starter tutorial for working with Angular in a .Net MVC environment. This post does not demonstrate best practices for Angular (refer to John Papa's style guide for that) but does help with the .Net specifics.
