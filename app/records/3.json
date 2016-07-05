@@ -1,3 +1,19 @@
 {
-  "title": "Highway 61 Revisited"
+  "title": "Highway 61 Revisited",
+  "artist": "Bob Dylan",
+  "year": "1965",
+  "albumCover": "assets/img/bobDylanHighway61Revisited.jpg",
+  "albumPrice": 6.99,
+  "tracks": [
+    {
+      "order": 1,
+      "trackTitle": "Like a Rolling Stone",
+      "length": "6:13"
+    },
+    {
+      "order": 2,
+      "trackTitle": "Tombstone Blues",
+      "length": "6:00"
+    }
+  ]
 }

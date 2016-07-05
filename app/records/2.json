@@ -1,3 +1,19 @@
 {
-  "title": "Run the Jewels 2"
+  "title": "Unknown Pleasures",
+  "artist": "Joy Division",
+  "year": "1979",
+  "albumCover": "assets/img/unknownPleasuresJoyDivision.png",
+  "albumPrice": 8.99,
+  "tracks": [
+    {
+      "order": 1,
+      "trackTitle": "Disorder",
+      "length": "3:32"
+    },
+    {
+      "order": 2,
+      "trackTitle": "Day of the Lords",
+      "length": "4:49"
+    }
+  ]
 }

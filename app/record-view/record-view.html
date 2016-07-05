@@ -1,4 +1,8 @@
 <div>
     <p>This is my record</p>
+    <img src="{{vm.record.albumCover}}"
     <p>{{vm.record.title}}</p>
+    <div ng-repeat="track in vm.record.tracks">
+        <p>{{track.order}}  {{track.trackTitle}}  {{track.length}}</p>
+    </div>
 </div>

@@ -1,3 +1,19 @@
 {
-  "title": "Whenever You Need Somebody"
+  "title": "Whenever You Need Somebody",
+  "artist": "Rick Astley",
+  "year": "1986",
+  "albumCover": "assets/img/rickAstleyWheneverYouNeedSomeone.jpg",
+  "albumPrice": 10.99,
+  "tracks": [
+    {
+      "order": 1,
+      "trackTitle": "Never Gonna Give You Up",
+      "length": "3:32"
+    },
+    {
+      "order": 2,
+      "trackTitle": "Whenever You Need Somebody",
+      "length": "3:52"
+    }
+  ]
 }

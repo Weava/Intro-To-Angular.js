@@ -9,11 +9,11 @@
   },
   {
     "id": 2,
-    "title": "Run the Jewels 2",
-    "artist": "Run the Jewels",
-    "year": "2014",
-    "albumCover": "assets/img/runTheJewels2.jpg",
-    "albumPrice": 0.00
+    "title": "Unknown Pleasures",
+    "artist": "Joy Division",
+    "year": "1979",
+    "albumCover": "assets/img/unknownPleasuresJoyDivision.png",
+    "albumPrice": 8.99
   },
   {
     "id": 3,
