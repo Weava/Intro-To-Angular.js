@@ -21,14 +21,15 @@ Angular is normally used for single page web applications, but can support multi
 Angular is how web applications should be made. It takes base JavaScript and many of its well known libraries, namely JQuery, to the next level. By giving the developer simple tools to organize their client-side JavaScript, Angular makes it very easy to create modular, testable, and maintainable code that is not mixed with any other language.
 
 ##### How is Angular.js structured?
-Angular is built around two very important patterns, Modules and Dependency Injection.
-###### Modules
-Modules are a way to keep each part of your application segmented from any other. Modules will usually contain the elements that are only necessary for that module. This enforces a feature based application strucuture, where each feature becomes its own module.
+Angular is built around two very important principles, Modularity and Dependency Injection.
+###### Modularity
+The Modularity Prinicple of Angular maintains that each element of your application should be contained in a module.
+Modules are a way to keep each part of your application segmented from any other. Modules will usually contain the elements that are only necessary for that module, keeping dependencies in check. This enforces a feature based application structure, where each feature becomes its own module.
 
 // Insert Module example image here and explain
 
 ###### Dependency Injection
-Modules may have some functionality that other modules may want to use. For these instances, we can use Angular's built in Dependency Injection framework. Angular registers all modules within a project, and allows them to be used within other modules.
+Modules may have some functionality that other modules may want to use. For these instances, we can use Angular's built in Dependency Injection framework. Angular registers all modules within a project, and allows them to be used within other modules. Injecting a dependency will allow a module to use all public elements of said dependency.
 
 // Insert Dependency Injection example image here and explain
 
@@ -150,8 +151,12 @@ There are many other elements to angular that, for the sake of simplicity, I wil
 ## Angular In Detail
 ###### So how does an actual Angular project come together?
 
+// Explain this project and it's structure
+
 ## Some Rules for Angular
 ###### Keep these in mind when developing your project
+
+// Provide some key rules for Angular projects
 
 ## Further Reading
 ###### Resources for both Angular and JavaScript
