@@ -77,7 +77,7 @@ Manage the life-cycle of other components (for example, to create service instan
 [Controllers page in Angular docs](https://docs.angularjs.org/guide/controller)
 
 ##### Services
-Services are the main elements of Angular that are meant to represent the back-end of the project. They should be used to share and manage data and states between controllers, as well as retrieving and storing data from both remote and local sources (e.g. API calls, reading from local JSON file, etc.). These elements rely on dependency injection
+Services are the main elements of Angular that are meant to represent the back-end of the project. They should be used to share and manage data and states between controllers, as well as retrieving and storing data from both remote and local sources (e.g. API calls, reading from local JSON file, etc.). These elements rely on dependency injection.
 
 NOTE: Services are singletons in Angular, meaning they are simply a single instance of their service passed around from use to use.
 
@@ -86,10 +86,10 @@ NOTE: Services are singletons in Angular, meaning they are simply a single insta
 [Services page in Angular docs](https://docs.angularjs.org/guide/services)
 
 ##### Others
-There are many other elements to angular that, for the sake of simplicity, I will not get into. I tried to get what I felt were the most fundamental elements of Angular within this project to minimize confusion. These other elements deserve just as much attention, and I highly recommend heading over to the [Angular docs](https://docs.angularjs.org/guide) for more information on these other elements. 
+There are many other elements to angular that, for the sake of simplicity, I will not get into. I tried to get what I felt were the most fundamental elements of Angular within this project to minimize confusion. These other elements deserve just as much attention, and I highly recommend heading over to the [Angular docs](https://docs.angularjs.org/guide) for more information.
 
 ## Further Reading
-Below should be some good resources for learning the basics of Angular, as well as other important concepts for JavaScript
+Below should be some good resources for learning the basics of Angular, as well as other important concepts for JavaScript.
 
 [John Papa's Angular 1.x Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) - A great guide for writing readable and testable Angular code, as well as establishing a good looking style guide.
 
@@ -97,9 +97,9 @@ Below should be some good resources for learning the basics of Angular, as well 
 
 [The Angular Docs](https://docs.angularjs.org/guide) - The main documentation for Angular, made by Google.
 
-[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - You Don't Know JS is a fantastic book series based on learning the fundamentals, and eventually more advanced topics, of JavaScript. While not strictly about Angular, these books will help build a better understanding of the language that Angular is built upon.
+[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - You Don't Know JS is a fantastic book series based on learning the fundamentals, and eventually, more advanced topics of JavaScript. While not strictly about Angular, these books will help develop a better understanding of the language that Angular is built upon.
 
-[RxJS Github Repo](https://github.com/Reactive-Extensions/RxJS) - Reactive Extensions are a great library that is built into Angular. While no examples exist within this project, I recommend reading up on RxJS, as it can make data composition and flow much simpler.
+[RxJS Github Repo](https://github.com/Reactive-Extensions/RxJS) - Reactive Extensions are a great library that is built into Angular. While no examples exist within this project, I recommend reading up on RxJS, as it can make data composition and flow much simpler. This is an advanced topic, so if you don't know a whole lot about Angular or JavaScript, I recommend building up those skills before learning Rx.
 
 [RxJS Blog Post From Google](https://medium.com/google-developer-experts/angular-introduction-to-reactive-extensions-rxjs-a86a7430a61f#.xlnecvuou) - A great blog post from Google, explaining what RxJS is, and how to use it with Angular. If going through the RxJS repo didn't make a lot of sense, this might help.
 
