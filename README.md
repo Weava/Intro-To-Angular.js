@@ -131,7 +131,7 @@ Angular has databinding for most cases and directives to encapsulate manual DOM 
 * Format input — Use angular form controls instead.
 * Filter output — Use angular filters instead.
 * Share code or state across controllers — Use angular services instead.
-Manage the life-cycle of other components (for example, to create service instances).
+* Manage the life-cycle of other components (for example, to create service instances).
 ```
 
 // Insert controller examples from project here and explain
