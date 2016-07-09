@@ -207,7 +207,7 @@ If you are wondering why it says `.factory` instead of `.service`, that is becau
 just factories that can determine what service you may need at runtime.
 
 I won't explain how factories work in this tutorial, as it is out of scope, but I recommend
-checking [the wikipedia page for the factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) form ore info
+checking [the wikipedia page for the factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) for more info
 
 [Services page in Angular docs](https://docs.angularjs.org/guide/services)
 
