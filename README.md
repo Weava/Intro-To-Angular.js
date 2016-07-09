@@ -118,7 +118,7 @@ Directives are simply a way of modifying the HTML in a page. Whether it be creat
 
 Angular has plenty of directives that come built in. [ngClick](https://docs.angularjs.org/api/ng/directive/ngClick), [ngRepeat](https://docs.angularjs.org/api/ng/directive/ngRepeat), and [ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) just to name a few.
 
-An example of ngRepeate is below:
+An example of ngRepeat is below:
 
 `<md-list-item ng-repeat="record in vm.records">`
 
