@@ -252,7 +252,7 @@ NOTE: If you start to see a lot of files in one folder, go ahead and create sub-
 
 Most Angular apps will have a similar application flow to the diagram below:
 
-![Angular application flow chart]("/screenshots/angularFlow.png")
+![Angular application flow chart](/screenshots/angularFlow.png)
 
 This highly simplified version of application flow in Angular shows how each component relates to each other.
 Our application follows this pattern, where each feature delivers its own template, controller, and service.
