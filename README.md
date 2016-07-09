@@ -27,11 +27,18 @@ The Modularity Prinicple of Angular maintains that each element of your applicat
 Modules are a way to keep each part of your application segmented from any other. Modules will usually contain the elements that are only necessary for that module, keeping dependencies in check. This enforces a feature based application structure, where each feature becomes its own module.
 
 // Insert Module example image here and explain
+![Angular module example](/screenshots/appModuleExample.png)
+
+This defines our module for the entire application (known as introApp). The module takes an array
+of strings as an argument. Each string corresponds to the name of another module that our application module wishes
+to use as a dependency. In other words, we are **injecting those dependencies**
 
 ###### Dependency Injection
 Modules may have some functionality that other modules may want to use. For these instances, we can use Angular's built in Dependency Injection framework. Angular registers all modules within a project, and allows them to be used within other modules. Injecting a dependency will allow a module to use all public elements of said dependency.
 
-// Insert Dependency Injection example image here and explain
+The module above gave us a good example of just how dependencies are injected using Angular. We simply
+pass any module names that we need as an argument into our new module. This allows for easy hot-swapping of dependencies,
+which can make code-reuse much simpler, and make testing our code much much easier.
 
 These concepts may seem confusing at first, but as we get into the actual elements that make up Angular, it should be made clear how everything fits together. Before we get into those elements though, let's talk setup.
 
@@ -104,7 +111,15 @@ Directives are simply a way of modifying the HTML in a page. Whether it be creat
 
 Angular has plenty of directives that come built in. [ngClick](https://docs.angularjs.org/api/ng/directive/ngClick), [ngRepeat](https://docs.angularjs.org/api/ng/directive/ngRepeat), and [ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) just to name a few.
 
-// Insert ng-repeat example from project and explanation here.
+An example of ngRepeate is below:
+
+`<md-list-item ng-repeat="record in vm.records">`
+
+In the above example, we are pulling an array of records from the `vm.records` array in our controller
+and telling ng-repeat to use this array. ng-repeat is a directive that takes an array and creates as many
+views as there are array items. This can be good for, say, looping through and displaying
+information for some of your favorite records.
+
 
 [Directives page in Angular docs](https://docs.angularjs.org/guide/directive)
 
@@ -133,8 +148,23 @@ Angular has databinding for most cases and directives to encapsulate manual DOM 
 * Share code or state across controllers — Use angular services instead.
 * Manage the life-cycle of other components (for example, to create service instances).
 ```
+Here is one example of a controller:
+```
+    angular
+        .module('introApp.recordList')
+        .controller('RecordListController', RecordListController);
 
-// Insert controller examples from project here and explain
+
+    function RecordListController(recordlistservice) {
+        var vm = this;
+
+        vm.records = recordlistservice.getRecordList().query();
+        console.log(vm.records);
+    }
+```
+This controller (taken from the project) is incredibly simple, and doesn't define any functions.
+However, it does take in a service (We'll talk about those in a bit) and prepares our data to be
+shown in our UI.
 
 [Controllers page in Angular docs](https://docs.angularjs.org/guide/controller)
 
@@ -144,6 +174,34 @@ Services are the main elements of Angular that are meant to represent the back-e
 NOTE: Services are singletons in Angular, meaning they are simply a single instance of their service passed around from use to use.
 
 // Insert service example and explanation here
+```
+    angular
+       .module('introApp.recordList')
+       .factory('recordlistservice', ['$resource', recordlistservice]);
+
+    function recordlistservice($resource) {
+
+        var service = {
+                getRecordList: getRecordList
+            };
+
+        function getRecordList() {
+            console.log('Getting record list');
+            return $resource('records/records.json', {}, {
+                query: {
+                    method: 'GET',
+                    isArray: true
+                }
+            });
+        }
+    }
+```
+This is a small example of a controller that retrieves an array of objects from a local JSON file.
+If you are wondering why it says `.factory` instead of `.service`, that is because services are actually
+just factories that can determine what service you may need at runtime.
+
+I won't explain how factories work in this tutorial, as it is out of scope, but I recommend
+checking [the wikipedia page for the factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) form ore info
 
 [Services page in Angular docs](https://docs.angularjs.org/guide/services)
 
