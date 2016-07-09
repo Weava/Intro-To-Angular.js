@@ -29,6 +29,32 @@
   padding: 0;
 }
 
-.record-list-item {
+.material-padding {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
+.record-list-item {
+  height: 15%;
+  width: 15%;
+}
+
+.thumbnail {
+  display: block;
+  max-width:95px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+
+.record-list-text {
+
+}
+
+.record-view-image {
+  display: block;
+  max-width:300px;
+  max-height:300px;
+  width: auto;
+  height: auto;
 }

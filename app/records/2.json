@@ -14,6 +14,46 @@
       "order": 2,
       "trackTitle": "Day of the Lords",
       "length": "4:49"
+    },
+    {
+      "order": 3,
+      "trackTitle": "Candidate",
+      "length": "3:05"
+    },
+    {
+      "order": 4,
+      "trackTitle": "Insight",
+      "length": "4:29"
+    },
+    {
+      "order": 5,
+      "trackTitle": "New Dawn Fades",
+      "length": "4:47"
+    },
+    {
+      "order": 6,
+      "trackTitle": "She's Lost Control",
+      "length": "3:57"
+    },
+    {
+      "order": 7,
+      "trackTitle": "Shadowplay",
+      "length": "3:55"
+    },
+    {
+      "order": 8,
+      "trackTitle": "Wilderness",
+      "length": "2:38"
+    },
+    {
+      "order": 9,
+      "trackTitle": "Interzone",
+      "length": "2:16"
+    },
+    {
+      "order": 10,
+      "trackTitle": "I Remember Nothing",
+      "length": "5:53"
     }
   ]
 }

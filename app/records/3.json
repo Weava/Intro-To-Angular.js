@@ -14,6 +14,41 @@
       "order": 2,
       "trackTitle": "Tombstone Blues",
       "length": "6:00"
+    },
+    {
+      "order": 3,
+      "trackTitle": "It Takes a Lot to Laugh, It Takes a Train to Cry",
+      "length": "4:09"
+    },
+    {
+      "order": 4,
+      "trackTitle": "From a Buick 6",
+      "length": "3:19"
+    },
+    {
+      "order": 5,
+      "trackTitle": "Ballad of a Thin Man",
+      "length": "5:58"
+    },
+    {
+      "order": 6,
+      "trackTitle": "Queen Jane Approximately",
+      "length": "5:31"
+    },
+    {
+      "order": 7,
+      "trackTitle": "Highway 61 Revisited",
+      "length": "3:30"
+    },
+    {
+      "order": 8,
+      "trackTitle": "Just Like Tom Thumb's Blues",
+      "length": "5:32"
+    },
+    {
+      "order": 9,
+      "trackTitle": "Desolation Row",
+      "length": "11:21"
     }
   ]
 }

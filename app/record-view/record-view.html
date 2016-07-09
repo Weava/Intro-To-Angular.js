@@ -1,8 +1,9 @@
-<div>
-    <p>This is my record</p>
-    <img src="{{vm.record.albumCover}}"
+<div style="margin: 0 auto; width: 20%;" class="material-padding">
+    <img src="{{vm.record.albumCover}}" class="record-view-image">
     <p>{{vm.record.title}}</p>
-    <div ng-repeat="track in vm.record.tracks">
-        <p>{{track.order}}  {{track.trackTitle}}  {{track.length}}</p>
-    </div>
+    <md-list>
+        <md-list-item ng-repeat="track in vm.record.tracks">
+            <p class="md-list-item-text">{{track.order}}.  {{track.trackTitle}} {{track.length}}</p>
+        </md-list-item>
+    </md-list>
 </div>

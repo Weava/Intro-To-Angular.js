@@ -1,13 +1,12 @@
-<div>
-    <p>This is a list of records</p>
-    <div ng-repeat="record in vm.records">
-        <div class="record-list-item">
-            <a href="#!/record/{{record.id}}" class="thumbnail">
-                <img src="{{record.albumCover}}">
+<md-list flex style="margin: 0 auto; width: 20%;" class="material-padding">
+    <md-list-item ng-repeat="record in vm.records">
+            <a href="#!/record/{{record.id}}" style="text-decoration: none;">
+                <img src="{{record.albumCover}}" class="thumbnail">
+                <div class="md-list-item-text">
+                    <h3>{{record.title}}</h3>
+                    <p>{{record.artist}}</p>
+                </div>
             </a>
-            <a href="#!/record/{{record.id}}">
-                <p>{{record.title}}  -  {{record.artist}}</p>
-            </a>
-        </div>
-    </div>
-</div>
+        </a>
+    </md-list-item>
+</md-list>
