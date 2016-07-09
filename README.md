@@ -207,7 +207,7 @@ If you are wondering why it says `.factory` instead of `.service`, that is becau
 just factories that can determine what service you may need at runtime.
 
 I won't explain how factories work in this tutorial, as it is out of scope, but I recommend
-checking [the wikipedia page for the factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) for more info
+checking [the wikipedia page for the factory pattern](https://en.wikipedia.org/wiki/Factory_method_pattern) for more info.
 
 [Services page in Angular docs](https://docs.angularjs.org/guide/services)
 
@@ -217,7 +217,62 @@ There are many other elements to angular that, for the sake of simplicity, I wil
 ## Angular In Detail
 ###### So how does an actual Angular project come together?
 
-// Explain this project and it's structure
+Now time to talk about this project, and it's structure. This application (known as introApp from now on) is
+a simple list of records, with the ability to select a record and view more information about it.
+
+Most Angular projects will use a feature based approach to creating modules, and use a folder structure that reflects this.
+The folder structure might look something like this:
+```
+app/
+    content/
+        img/
+        css/
+    feature-one/
+    feature-two/
+    core/
+    app.module.js
+    index.html
+```
+within each feature directory, we will put the items that are necessary for that feature to work.
+As a specific example, lets look at a feature folder in this project:
+```
+record-list/
+    config.route.js
+    record-list.controller.js
+    record-list.html
+    record-list.module.js
+    record-list.service.js
+```
+As you can see, we have put the controller, template, module, and service for the `introApp.recordList` module
+all in this folder.
+
+NOTE: If you start to see a lot of files in one folder, go ahead and create sub-folders based on function (e.g. controllers, directives, etc.)
+
+###### Application flow
+
+Most Angular apps will have a similar application flow to the diagram below:
+
+![Angular application flow chart]("/screenshots/angularFlow.png")
+
+This highly simplified version of application flow in Angular shows how each component relates to each other.
+Our application follows this pattern, where each feature delivers its own template, controller, and service.
+Not all features you develop will need all of these pieces, so use discretion when creating new features.
+
+That flow chart only shows us how the application delivers its elements to the UI. Data will flow somewhat differently.
+Whether you are pulling data locally (from a JSON file stored on the same server as the app) or getting
+information from an API. Angular should pull this information using a service. Any sort of data retrieval or storage
+from sources outside the application should occur here. Most other parts of an Angular application simply
+shape the data for presentation to the user.
+
+NOTE: Making data requests to extra-application sources from anywhere but service methods makes your code much harder to read, maintain, and test.
+
+As an example of this data flow, our `record-list.service.js` file retrieves data from a JSON file.
+Then `record-list.controller.js` takes that service as a dependency and uses it to prepare the data for the view.
+We then show the data to the user in `record-list.html` using various directives, HTML, and CSS.
+
+Not all Angular apps will follow these patterns, but these are the best practices for most situations,
+and should be followed. Next, we will take a look at some rules that should be applied to help you write
+clean Angular code, and avoid a few pitfalls along the way.
 
 ## Some Rules for Angular
 ###### Keep these in mind when developing your project
