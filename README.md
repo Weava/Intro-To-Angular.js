@@ -26,8 +26,15 @@ Angular is built around two very important principles, Modularity and Dependency
 The Modularity Prinicple of Angular maintains that each element of your application should be contained in a module.
 Modules are a way to keep each part of your application segmented from any other. Modules will usually contain the elements that are only necessary for that module, keeping dependencies in check. This enforces a feature based application structure, where each feature becomes its own module.
 
-// Insert Module example image here and explain
-![Angular module example](/screenshots/appModuleExample.png)
+```
+    angular.module('introApp', [
+        'ngRoute',
+        'ngResource',
+        'ngMaterial',
+        'introApp.recordList',
+        'introApp.recordView'
+    ]);
+```
 
 This defines our module for the entire application (known as introApp). The module takes an array
 of strings as an argument. Each string corresponds to the name of another module that our application module wishes
@@ -173,7 +180,6 @@ Services are the main elements of Angular that are meant to represent the back-e
 
 NOTE: Services are singletons in Angular, meaning they are simply a single instance of their service passed around from use to use.
 
-// Insert service example and explanation here
 ```
     angular
        .module('introApp.recordList')
