@@ -288,6 +288,8 @@ clean Angular code, and avoid a few pitfalls along the way.
 
 [The Angular Docs](https://docs.angularjs.org/guide) - The main documentation for Angular, made by Google.
 
+[Intro to Angular Presentation](https://docs.google.com/presentation/d/1kuouVut3PnPFhlf9BdW-VAXyvinTnGaHmduussZcBUQ/edit?usp=sharing) - My Google Slides presentation for introducing Angular.js.
+
 [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) - You Don't Know JS is a fantastic book series based on learning the fundamentals, and eventually, more advanced topics of JavaScript. While not strictly about Angular, these books will help develop a better understanding of the language that Angular is built upon.
 
 [RxJS Github Repo](https://github.com/Reactive-Extensions/RxJS) - Reactive Extensions are a great library that is built into Angular. While no examples exist within this project, I recommend reading up on RxJS, as it can make data composition and flow much simpler. This is an advanced topic, so if you don't know a whole lot about Angular or JavaScript, I recommend building up those skills before learning Rx.
